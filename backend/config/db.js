@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useCreateIndex", true);
 const db_con = mongoose.connect(
-  "mongodb+srv://nft:nft@nft.v4inf5y.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://jerryfashionapp:jerry@123@jerryfashionappp.hkuvge8.mongodb.net/?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (err) {
     if (err) {

@@ -58,12 +58,6 @@ const activateEmails = require('./routes/ActiveEmails');
 const generalSettingsRoute = require('./routes/GeneralSettings');
 const updateProducts = require('./routes/updateProducts');
 const addYourOwnProduct = require('./routes/addYourOwnProduct');
-const addWallets = require('./routes/addWallets.js');
-const wwalletEdit=require('./routes/updateWallet.js');
-const wwalletDelete=require('./routes/deleteWallets.js');
-const currencyAdd=require('./routes/addCurrencies.js');
-const currencyUpdate=require('./routes/updateCurrencies.js');
-const currencyDelete=require("./routes/deleteCurrencies.js");
 const deleteSlider=require('./routes/deleteSliderImages.js');
 const updateSliders = require('./routes/updateSliders.js')
 // ********Importing of Post Routes Ends Here************ //
@@ -97,12 +91,6 @@ app.use(activateEmails);
 app.use(generalSettingsRoute);
 app.use(updateProducts)
 app.use(addYourOwnProduct);
-app.use(addWallets);
-app.use(wwalletEdit);
-app.use(wwalletDelete);
-app.use(currencyAdd);
-app.use(currencyUpdate);
-app.use(currencyDelete);
 app.use(deleteSlider);
 app.use(updateSliders);
 // app.use(newsRoute);
