@@ -59,7 +59,8 @@ const generalSettingsRoute = require('./routes/GeneralSettings');
 const updateProducts = require('./routes/updateProducts');
 const addYourOwnProduct = require('./routes/addYourOwnProduct');
 const deleteSlider=require('./routes/deleteSliderImages.js');
-const updateSliders = require('./routes/updateSliders.js')
+const updateSliders = require('./routes/updateSliders.js');
+const addBrands = require('./routes/brands.js');
 // ********Importing of Post Routes Ends Here************ //
 
 
@@ -93,7 +94,7 @@ app.use(updateProducts)
 app.use(addYourOwnProduct);
 app.use(deleteSlider);
 app.use(updateSliders);
-// app.use(newsRoute);
+app.use(addBrands);
 // ******** Post Routes End*********** //
 
 // **************Using Fetch Routes*********** //

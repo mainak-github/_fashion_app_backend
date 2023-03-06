@@ -6,17 +6,11 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "public")));
-const Storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "../../JerryFashionApp/backend/uploads");
-  },
-  filename: (req, file, cb) => {
-    cb(
-      null,
-      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
-    );
-  },
+const Storage=multer.diskStorage({
+  destination:"uploads",
+  filename:(req,file,cb)=>{
+      cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname));
+  }
 });
 
 const upLoadProductImg = multer({ storage: Storage }).single("collectionsImg");
